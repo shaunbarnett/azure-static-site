@@ -1,10 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Shaun's Static Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaun Barnett | IT Support Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #0078d4;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin-bottom: 10px;
+        }
+        section {
+            max-width: 900px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #0078d4;
+        }
+        .skills-list, .project-list {
+            list-style: none;
+            padding: 0;
+        }
+        .skills-list li, .project-list li {
+            background: #e9e9e9;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #0078d4;
+            color: white;
+            margin-top: 50px;
+        }
+        a {
+            color: #0078d4;
+            font-weight: bold;
+        }
+        .project-link {
+            display: inline-block;
+            margin-top: 8px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to Shaun's Azure Static Website!</h1>
-    <p>If you're reading this, your Azure Storage static website is working.</p>
+
+<header>
+    <h1>Shaun Barnett</h1>
+    <p>IT Support Officer | Cloud Enthusiast | Azure Learner</p>
+</header>
+
+<section>
+    <h2>About Me</h2>
+    <p>
+        Hi, I'm Shaun — an IT Support Officer with a passion for cloud technologies, automation, and learning how modern infrastructure works.
+        I'm currently building hands-on projects using <strong>Microsoft Azure</strong> to strengthen my skills and work toward certifications.
+    </p>
+</section>
+
+<section>
+    <h2>Skills</h2>
+    <ul class="skills-list">
+        <li>Azure Administration (Storage, Identity, Networking)</li>
+        <li>Active Directory & Microsoft 365 Support</li>
+        <li>Windows Desktop Support</li>
+        <li>Networking Fundamentals (DNS, DHCP, VPN)</li>
+        <li>PowerShell Basics</li>
+        <li>GitHub & CI/CD Pipelines</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Projects</h2>
+    <ul class="project-list">
+
+        <li>
+            <strong>Azure Static Website + GitHub Actions</strong>
+            <p>
+                Deployed a static website using Azure Storage with OIDC-secured GitHub Actions CI/CD.
+                Demonstrates cloud storage, RBAC, identity management, and deployment automation.
+            </p>
+            <a class="project-link" href="https://shaunstaticweb.z6.web.core.windows.net/" target="_blank">View Live Project</a>
+        </li>
+
+        <li>
+            <strong>More Projects Coming Soon</strong>
+            <p>
+                I’m actively working on cloud and automation projects to expand my portfolio.
+            </p>
+        </li>
+
+    </ul>
+</section>
+
+<section>
+    <h2>Contact</h2>
+    <p>Email: <strong>your-email@example.com</strong></p>
+    <p>GitHub: <a href="https://github.com/shaunbarnett" target="_blank">github.com/shaunbarnett</a></p>
+</section>
+
+<footer>
+    © 2026 Shaun Barnett
+</footer>
+
 </body>
 </html>
