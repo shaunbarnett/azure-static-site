@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shaun Barnett - Cloud Engineer</title>
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,53 +13,79 @@
             padding: 0;
             color: #333;
         }
+
+        /* HEADER */
         header {
-            background: #0058a3;
+            background: linear-gradient(135deg, #0058a3, #0078d4);
             color: white;
-            padding: 50px 20px;
+            padding: 60px 20px;
             text-align: center;
         }
         header h1 {
-            margin-bottom: 10px;
-            font-size: 40px;
+            font-size: 42px;
+            margin: 0;
         }
         header h3 {
-            margin-top: 0;
-            font-weight: lighter;
+            font-weight: 300;
+            font-size: 20px;
         }
+
+        /* SECTIONS */
         section {
             max-width: 900px;
             background: white;
-            margin: 30px auto;
-            padding: 30px;
-            border-radius: 10px;
+            margin: 40px auto;
+            padding: 35px;
+            border-radius: 12px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
         h2 {
             color: #0058a3;
-            border-bottom: 2px solid #0058a3;
-            padding-bottom: 5px;
+            border-bottom: 3px solid #0058a3;
+            padding-bottom: 6px;
         }
-        .list {
-            list-style: none;
-            padding: 0;
+
+        /* SKILL BARS */
+        .skill {
+            margin: 15px 0;
         }
-        .list li {
-            background: #e7e7e7;
-            padding: 10px;
-            margin: 6px 0;
-            border-radius: 6px;
+        .skill-name {
+            font-weight: bold;
+            margin-bottom: 5px;
         }
+        .skill-bar {
+            width: 100%;
+            background: #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .skill-level {
+            height: 12px;
+            background: #0078d4;
+            width: 0%;
+            animation: fill 2s forwards;
+        }
+        @keyframes fill {
+            from { width: 0%; }
+        }
+
+        /* LOGOS */
+        .logo-row {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+        .logo-row img {
+            height: 60px;
+        }
+
         footer {
             background: #0058a3;
             color: white;
             text-align: center;
-            padding: 15px;
-            margin-top: 40px;
-        }
-        .contact a {
-            color: #0058a3;
-            font-weight: bold;
+            padding: 20px;
+            margin-top: 50px;
         }
     </style>
 </head>
@@ -66,44 +93,64 @@
 
 <header>
     <h1>Shaun Barnett</h1>
-    <h3>Cloud Engineer | Azure Administrator | IT Infrastructure Specialist</h3>
+    <h3>Cloud Engineer | Azure Administrator | Infrastructure Specialist</h3>
 </header>
 
 <section>
     <h2>Profile</h2>
     <p>
-        Results-driven IT professional with strong experience in cloud engineering, endpoint management, 
-        cybersecurity, and enterprise infrastructure. Skilled in Azure administration, Microsoft 365, 
-        automation, and large-scale deployments across financial institutions and global organisations.
-        Passionate about secure, scalable solutions and continuous learning.
+        Results-driven IT professional with expertise in Azure cloud administration, M365, 
+        cybersecurity, identity management, automation and enterprise endpoint management. 
+        Skilled in delivering secure, scalable infrastructure solutions for large global organisations.
     </p>
 </section>
 
 <section>
-    <h2>Contact Details</h2>
-    <p class="contact">
-        <strong>Email:</strong> <a href="mailto:shaunbarnett1@hotmail.com">shaunbarnett1@hotmail.com</a><br>
-        <strong>Phone:</strong> 07958 934531<br>
-        <strong>Location:</strong> Stockwell, London<br>
-        <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/shaun-barnett-446b32215/">View Profile</a><br>
-        <strong>GitHub:</strong> <a href="https://github.com/shaunbarnett">github.com/shaunbarnett</a>
-    </p>
+    <h2>Certifications</h2>
+
+    <div class="logo-row">
+        <img src="https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-azure-administrator-associate-badge.svg" alt="Azure Administrator">
+        <img src="https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-endpoint-administrator-associate-badge.svg" alt="MD-102">
+        <img src="https://images.credly.com/images/0c8e9841-8c9d-4c5f-8d4c-ebb14f0489d4/CYSA_.png" alt="CompTIA CySA+">
+        <img src="https://images.credly.com/images/76b4668c-5bb1-47f2-98a7-0b7086766960/CompTIA_Network_2Bce.png" alt="CompTIA Network+">
+        <img src="https://images.credly.com/images/1e56ae42-7265-47cb-b08d-d87acd1b77c5/CompTIA_Server_2Bce.png" alt="CompTIA Server+">
+        <img src="https://images.credly.com/images/99289602-0c7e-47fc-8b73-4d0c5fb07a1d/Terraform-Associate-Badge.png" alt="Terraform Associate">
+    </div>
 </section>
 
 <section>
-    <h2>Core Skills</h2>
-    <ul class="list">
-        <li>Azure Administration (AZ‑104)</li>
-        <li>Microsoft 365 Endpoint Admin (MD‑102)</li>
-        <li>Intune MDM, Autopilot, Compliance Policies</li>
-        <li>Azure VMs, VNETs, NSGs, Blob Storage</li>
-        <li>Entra ID, Conditional Access, MFA</li>
-        <li>Security & Threat Intelligence (CySA+)</li>
-        <li>Azure Backup & Site Recovery</li>
-        <li>Azure Monitor, Log Analytics, Automation</li>
-        <li>PowerShell, Python, SQL, Django</li>
-        <li>IT Support (2nd/3rd line), AD, MDM, Citrix</li>
-    </ul>
+    <h2>Skills (Animated)</h2>
+
+    <div class="skill">
+        <div class="skill-name">Azure Administration</div>
+        <div class="skill-bar"><div class="skill-level" style="width: 95%;"></div></div>
+    </div>
+
+    <div class="skill">
+        <div class="skill-name">Microsoft 365 & Intune</div>
+        <div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div>
+    </div>
+
+    <div class="skill">
+        <div class="skill-name">Identity & Access (Entra ID, MFA, CA)</div>
+        <div class="skill-bar"><div class="skill-level" style="width: 92%;"></div></div>
+    </div>
+
+    <div class="skill">
+        <div class="skill-name">Azure Networking (VNETs, NSGs, VPN)</div>
+        <div class="skill-bar"><div class="skill-level" style="width: 85%;"></div></div>
+    </div>
+
+    <div class="skill">
+        <div class="skill-name">PowerShell, Python & Automation</div>
+        <div class="skill-bar"><div class="skill-level" style="width: 80%;"></div></div>
+    </div>
+
+    <div class="skill">
+        <div class="skill-name">Cybersecurity & Monitoring</div>
+        <div class="skill-bar"><div class="skill-level" style="width: 88%;"></div></div>
+    </div>
+
 </section>
 
 <section>
@@ -111,53 +158,47 @@
 
     <h3>Infrastructure Engineer – WaterAid (Smartdesc)<br><small>Nov 2024 – Present</small></h3>
     <ul>
-        <li>Managed Microsoft 365 including Teams, SharePoint & Exchange</li>
-        <li>Administered Intune MDM, Autopilot & device compliance</li>
-        <li>Implemented Conditional Access & Entra ID security policies</li>
-        <li>Supported Azure VMs, VNETs, NSGs, Storage & identity services</li>
-        <li>Monitoring using Azure Monitor & Log Analytics</li>
-        <li>Managed Azure Backup, Site Recovery & cost optimisation</li>
+        <li>Microsoft 365 admin (SharePoint, Exchange, Teams)</li>
+        <li>Intune MDM, Autopilot, compliance & security controls</li>
+        <li>Azure administration: VMs, VNETs, NSGs, Storage, Entra ID</li>
+        <li>Automation using Azure Monitor & Log Analytics</li>
+        <li>Azure Backup, Site Recovery, cost optimisation</li>
     </ul>
 
     <h3>IT Customer Engineer – Computacenter (HSBC)<br><small>Oct 2022 – Nov 2024</small></h3>
     <ul>
-        <li>2nd & 3rd line tech bar support at HSBC Canary Wharf HQ</li>
-        <li>Supported Intune & Blackberry MDM</li>
-        <li>Laptop builds, VDI support & Citrix troubleshooting</li>
-        <li>Hosted webinars for Teams/Zoom/VDI best practices</li>
+        <li>2nd/3rd line technical support for HSBC Canary Wharf HQ</li>
+        <li>Supported Intune, Blackberry UEM, VDI & Citrix</li>
+        <li>Delivered webinars and high-level user training</li>
     </ul>
 
     <h3>IT Customer Engineer – Computacenter (Credit Suisse)<br><small>Oct 2021 – Sep 2022</small></h3>
     <ul>
-        <li>2nd & 3rd line support for Credit Suisse users</li>
-        <li>Created Linux files, configured VMs & managed peripherals</li>
-        <li>Performed SCCM server migrations across Lloyds Banking Group</li>
-        <li>Deployed 3000+ workstations and peripherals across 9 floors</li>
-    </ul>
-
-    <h3>Deployment Technician – Santander Bank<br><small>July 2021 – Oct 2021</small></h3>
-    <ul>
-        <li>Decommissioned and upgraded IT equipment across departments</li>
-        <li>Delivered legacy hardware to charity organisations</li>
+        <li>2nd/3rd line enterprise support</li>
+        <li>Performed SCCM migrations, VM deployment & hardware rollout</li>
+        <li>Helped deploy 3000+ workstations across 9 floors</li>
     </ul>
 </section>
 
 <section>
-    <h2>Education & Certifications</h2>
-    <ul class="list">
-        <li>Terraform Associate 003 – HashiCorp (2026)</li>
-        <li>AZ‑104 Azure Administrator – Microsoft (2025)</li>
-        <li>MD‑102 Endpoint Administrator – Microsoft (2025)</li>
-        <li>CompTIA Network+, Server+, CySA+ (2023–2024)</li>
-        <li>CompTIA A+ (2021)</li>
-        <li>Python Engineering Bootcamp – HyperionDev (2023)</li>
-        <li>City & Guilds Electrical Certifications (2010–2011)</li>
-    </ul>
+    <h2>Contact Me</h2>
+    <p><strong>Email:</strong> shaunbarnett1@hotmail.com</p>
+    <p><strong>LinkedIn:</strong> linkedin.com/in/shaun-barnett-446b32215/</p>
+    <p><strong>GitHub:</strong> github.com/shaunbarnett</p>
 </section>
 
 <footer>
     © 2026 Shaun Barnett — Cloud Engineer Portfolio
 </footer>
+
+<script>
+    // Trigger skill bar animation on load
+    window.onload = () => {
+        document.querySelectorAll('.skill-level').forEach(bar => {
+            bar.style.width = bar.style.width;
+        });
+    };
+</script>
 
 </body>
 </html>
