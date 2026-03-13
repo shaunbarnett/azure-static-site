@@ -1,4 +1,4 @@
-# 🌐 Shaun Barnett – Cloud Engineer Portfolio (Azure Static Website)
+# 🌐 Shaun Barnett – Cloud Engineer (Azure Static Website)
 
 This project hosts my professional Cloud Engineer portfolio as a fully deployed **Azure Static Website** with automated CI/CD using **GitHub Actions** and secure **OIDC authentication**.
 
